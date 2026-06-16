@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import {Link, useNavigate} from 'react-router-dom'
 import { logoutuser } from '../services/api'
 
@@ -7,7 +7,7 @@ function Navbar({onlogout, islogin}) {
 
   async function logout(){
   let response=await logoutuser()
-  // console.log(response)
+  console.log(response.status)
   localStorage.removeItem('token')
   localStorage.removeItem('refresh')
   onlogout()
