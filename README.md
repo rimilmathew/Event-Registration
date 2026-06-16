@@ -10,7 +10,7 @@ Event Registration is a full-stack web application where users can register, log
 
 ## Repository Layout
 
-
+```
 eventregistration/
 ├── eventmgnt-api/
 │   ├── requirements.txt
@@ -20,6 +20,7 @@ eventregistration/
     ├── INSTALLATION.md
     ├── DATABASE.md
     └── API.md
+```
 
 ## Features
 
