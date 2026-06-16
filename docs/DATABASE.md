@@ -112,37 +112,6 @@ Constraint:
 
 ---
 
-## Entity Relationship Diagram
-
-```mermaid
-erDiagram
-  User ||--o{ Registration : registers
-  Event ||--o{ Registration : contains
-
-  User {
-    int id
-    string name
-    string email
-    datetime created_at
-  }
-
-  Event {
-    int id
-    string title
-    text description
-    datetime date
-    string location
-    datetime created_at
-  }
-
-  Registration {
-    int id
-    datetime registered_at
-  }
-```
-
----
-
 ## Updating the Database Schema
 
 Whenever models are modified:
