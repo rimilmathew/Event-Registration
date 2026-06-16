@@ -1,0 +1,85 @@
+# =============================================================================
+# Event Registration Platform — root .gitignore
+# Covers: eventmgnt-api (Django), eventplatform-ui (React), shared tooling
+# =============================================================================
+
+# --- Python / Django (eventmgnt-api) ---
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+.venv/
+venv/
+env/
+ENV/
+*.egg
+*.egg-info/
+.eggs/
+dist/
+build/
+pip-log.txt
+pip-delete-this-directory.txt
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.nox/
+.mypy_cache/
+.ruff_cache/
+*.manifest
+*.spec
+
+# Django
+*.log
+local_settings.py
+db.sqlite3
+db.sqlite3-journal
+*.sqlite3
+media/
+staticfiles/
+
+# --- Node / React (eventplatform-ui) ---
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+.pnp
+.pnp.js
+coverage/
+/build
+
+# --- Environment & secrets ---
+.env
+.env.*
+!.env.example
+
+# --- IDE & editors ---
+.idea/
+.vscode/
+*.iml
+*.swp
+*.swo
+*~
+.project
+.classpath
+.settings/
+
+# --- OS files ---
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+Desktop.ini
+
+# --- Logs & temp ---
+logs/
+*.log
+*.bak
+*.tmp
+*.temp
