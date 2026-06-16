@@ -13,20 +13,6 @@ The API uses JWT authentication through `djangorestframework-simplejwt`.
 - Refresh token lifetime: 7 days
 - Login identifier: `email` (custom user model)
 
-Auth is required for protected endpoints. Public endpoints are marked below.
-
-```mermaid
-sequenceDiagram
-  participant Client
-  participant API
-  Client->>API: POST /register
-  Client->>API: POST /login/
-  API-->>Client: access + refresh
-  Client->>API: GET /events with Bearer access
-  Client->>API: POST /logout/ with refresh
-  API-->>Client: refresh token blacklisted
-```
-
 ## Endpoints
 
 ### 1) Register User
